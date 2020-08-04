@@ -1,0 +1,385 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5DA3325824C6D6A2008D4105 /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA3325724C6D6A2008D4105 /* ContainerView.swift */; };
+		5DB9EEAA24D9BAF90016A9F1 /* LabelwithPostFix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB9EEA924D9BAF90016A9F1 /* LabelwithPostFix.swift */; };
+		5DD03D9124C633630089BFAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD03D9024C633630089BFAC /* AppDelegate.swift */; };
+		5DD03D9524C633630089BFAC /* WorkoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD03D9424C633630089BFAC /* WorkoutVC.swift */; };
+		5DD03D9A24C633640089BFAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DD03D9924C633640089BFAC /* Assets.xcassets */; };
+		5DD03D9D24C633640089BFAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DD03D9B24C633640089BFAC /* LaunchScreen.storyboard */; };
+		5DD03DAB24C643990089BFAC /* UIColor+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD03DAA24C643990089BFAC /* UIColor+Custom.swift */; };
+		5DD03DAD24C6496A0089BFAC /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD03DAC24C6496A0089BFAC /* CardView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5DA3325724C6D6A2008D4105 /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
+		5DB9EEA924D9BAF90016A9F1 /* LabelwithPostFix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelwithPostFix.swift; sourceTree = "<group>"; };
+		5DD03D8D24C633630089BFAC /* AFitnessApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AFitnessApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DD03D9024C633630089BFAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5DD03D9424C633630089BFAC /* WorkoutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutVC.swift; sourceTree = "<group>"; };
+		5DD03D9924C633640089BFAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5DD03D9C24C633640089BFAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5DD03D9E24C633640089BFAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DD03DAA24C643990089BFAC /* UIColor+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Custom.swift"; sourceTree = "<group>"; };
+		5DD03DAC24C6496A0089BFAC /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5DD03D8A24C633630089BFAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5DD03D8424C633630089BFAC = {
+			isa = PBXGroup;
+			children = (
+				5DB9EEA924D9BAF90016A9F1 /* LabelwithPostFix.swift */,
+				5DD03D8F24C633630089BFAC /* AFitnessApp */,
+				5DD03D8E24C633630089BFAC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5DD03D8E24C633630089BFAC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5DD03D8D24C633630089BFAC /* AFitnessApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5DD03D8F24C633630089BFAC /* AFitnessApp */ = {
+			isa = PBXGroup;
+			children = (
+				5DD03D9024C633630089BFAC /* AppDelegate.swift */,
+				5DD03DA424C6359D0089BFAC /* Workout */,
+				5DD03DA924C643740089BFAC /* utils */,
+				5DA3325724C6D6A2008D4105 /* ContainerView.swift */,
+				5DD03D9924C633640089BFAC /* Assets.xcassets */,
+				5DD03D9B24C633640089BFAC /* LaunchScreen.storyboard */,
+				5DD03D9E24C633640089BFAC /* Info.plist */,
+			);
+			path = AFitnessApp;
+			sourceTree = "<group>";
+		};
+		5DD03DA424C6359D0089BFAC /* Workout */ = {
+			isa = PBXGroup;
+			children = (
+				5DD03DA724C6360E0089BFAC /* Model */,
+				5DD03DA624C636090089BFAC /* View */,
+				5DD03DA524C636010089BFAC /* Controller */,
+			);
+			path = Workout;
+			sourceTree = "<group>";
+		};
+		5DD03DA524C636010089BFAC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5DD03D9424C633630089BFAC /* WorkoutVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5DD03DA624C636090089BFAC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5DD03DAC24C6496A0089BFAC /* CardView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5DD03DA724C6360E0089BFAC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5DD03DA924C643740089BFAC /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				5DD03DAA24C643990089BFAC /* UIColor+Custom.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5DD03D8C24C633630089BFAC /* AFitnessApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DD03DA124C633640089BFAC /* Build configuration list for PBXNativeTarget "AFitnessApp" */;
+			buildPhases = (
+				5DD03D8924C633630089BFAC /* Sources */,
+				5DD03D8A24C633630089BFAC /* Frameworks */,
+				5DD03D8B24C633630089BFAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AFitnessApp;
+			productName = AFitnessApp;
+			productReference = 5DD03D8D24C633630089BFAC /* AFitnessApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5DD03D8524C633630089BFAC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = Nabeel;
+				TargetAttributes = {
+					5DD03D8C24C633630089BFAC = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = 5DD03D8824C633630089BFAC /* Build configuration list for PBXProject "AFitnessApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5DD03D8424C633630089BFAC;
+			productRefGroup = 5DD03D8E24C633630089BFAC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5DD03D8C24C633630089BFAC /* AFitnessApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5DD03D8B24C633630089BFAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DD03D9D24C633640089BFAC /* LaunchScreen.storyboard in Resources */,
+				5DD03D9A24C633640089BFAC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5DD03D8924C633630089BFAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DB9EEAA24D9BAF90016A9F1 /* LabelwithPostFix.swift in Sources */,
+				5DA3325824C6D6A2008D4105 /* ContainerView.swift in Sources */,
+				5DD03D9524C633630089BFAC /* WorkoutVC.swift in Sources */,
+				5DD03DAB24C643990089BFAC /* UIColor+Custom.swift in Sources */,
+				5DD03DAD24C6496A0089BFAC /* CardView.swift in Sources */,
+				5DD03D9124C633630089BFAC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5DD03D9B24C633640089BFAC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5DD03D9C24C633640089BFAC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5DD03D9F24C633640089BFAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5DD03DA024C633640089BFAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5DD03DA224C633640089BFAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W95NKD7E7N;
+				INFOPLIST_FILE = AFitnessApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.troop.AFitnessApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		5DD03DA324C633640089BFAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W95NKD7E7N;
+				INFOPLIST_FILE = AFitnessApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.troop.AFitnessApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5DD03D8824C633630089BFAC /* Build configuration list for PBXProject "AFitnessApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DD03D9F24C633640089BFAC /* Debug */,
+				5DD03DA024C633640089BFAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DD03DA124C633640089BFAC /* Build configuration list for PBXNativeTarget "AFitnessApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DD03DA224C633640089BFAC /* Debug */,
+				5DD03DA324C633640089BFAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5DD03D8524C633630089BFAC /* Project object */;
+}
