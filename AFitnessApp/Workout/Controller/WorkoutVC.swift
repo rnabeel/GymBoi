@@ -13,7 +13,40 @@ final class WorkoutVC: UIViewController {
 
     var safeArea: UILayoutGuide!
     
-    let cardView = CardView()
+   
+    let tableView = UITableView()
+    
+    let nameList = [WorkoutCellModel(
+    title: "Ali",
+    time: Int.random(in: 7...23),
+    exersice: Int.random(in: 3...5)),
+                    
+    WorkoutCellModel(
+    title: "Muhammad",
+    time: Int.random(in: 7...23),
+    exersice: Int.random(in: 3...5)),
+    
+    WorkoutCellModel(
+    title: "Ahmed",
+    time: Int.random(in: 7...23),
+    exersice: Int.random(in: 3...5)),
+    
+    WorkoutCellModel(
+    title: "Kylie",
+    time: Int.random(in: 7...23),
+    exersice: Int.random(in: 3...5)),
+    
+    WorkoutCellModel(
+    title: "Kyle",
+    time: Int.random(in: 7...23),
+    exersice: Int.random(in: 3...5)),
+    
+    WorkoutCellModel(
+    title: "Nex",
+    time: Int.random(in: 7...23),
+    exersice: Int.random(in: 3...5))
+    ]
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
@@ -23,28 +56,61 @@ final class WorkoutVC: UIViewController {
         safeArea = view.layoutMarginsGuide
         view.backgroundColor = .dimmedBlue
         setupNavigation()
-        setupContainerView()
+        //setupContainerView()
+        setupTableView()
     }
 
     private func setupNavigation(){
         navigationItem.title = "Workout"
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.customWhite]
+        navigationController?.navigationBar.barTintColor = .dimmedBlue
+        navigationController?.navigationBar.isTranslucent = false
+        
         
     }
     
-    private func setupContainerView(){
-        
-        view.addSubview(cardView)
-        
-        cardView.translatesAutoresizingMaskIntoConstraints = false
-        
-        let top = cardView.topAnchor.constraint(equalTo: safeArea.topAnchor, constant: 15)
-        let leading = cardView.leadingAnchor.constraint(equalTo: safeArea.leadingAnchor)
-        let trailing = cardView.trailingAnchor.constraint(equalTo:safeArea.trailingAnchor)
-        let height = cardView.heightAnchor.constraint(equalToConstant: 250)
-        NSLayoutConstraint.activate([top,leading,trailing,height])
-       
-        cardView.layer.cornerRadius = 10
-    }
+    
 
+    private func setupTableView(){
+        view.addSubview(tableView)
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        let top = tableView.topAnchor.constraint(equalTo: safeArea.topAnchor)
+        let leading = tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor)
+        let bottom = tableView.bottomAnchor.constraint(equalTo:  view.bottomAnchor)
+        let trailing = tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
+        NSLayoutConstraint.activate([top,bottom,leading,trailing])
+        
+        tableView.backgroundColor = .dimmedBlue
+        tableView.register(WorkoutCell.self, forCellReuseIdentifier: "cellid")
+        tableView.dataSource = self
+        tableView.delegate = self
+    }
+}
+
+extension WorkoutVC: UITableViewDelegate{
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 180
+    }
+}
+
+extension WorkoutVC: UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.nameList.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+         let cell = tableView.dequeueReusableCell(withIdentifier: "cellid", for: indexPath)
+        
+        guard let workoutCell = cell as? WorkoutCell else {
+            return cell
+        }
+        
+        let model = nameList[indexPath.row]
+        workoutCell.set(model: model)
+        return workoutCell
+    }
+  
+    
+    
 }
 

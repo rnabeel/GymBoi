@@ -8,17 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		5DA3325824C6D6A2008D4105 /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA3325724C6D6A2008D4105 /* ContainerView.swift */; };
+		5DAB83D424DAB95C00E8815D /* WorkoutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DAB83D324DAB95C00E8815D /* WorkoutCell.swift */; };
+		5DAB83D624DAC5C700E8815D /* WorkoutCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DAB83D524DAC5C700E8815D /* WorkoutCellModel.swift */; };
 		5DB9EEAA24D9BAF90016A9F1 /* LabelwithPostFix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB9EEA924D9BAF90016A9F1 /* LabelwithPostFix.swift */; };
 		5DD03D9124C633630089BFAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD03D9024C633630089BFAC /* AppDelegate.swift */; };
 		5DD03D9524C633630089BFAC /* WorkoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD03D9424C633630089BFAC /* WorkoutVC.swift */; };
 		5DD03D9A24C633640089BFAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DD03D9924C633640089BFAC /* Assets.xcassets */; };
 		5DD03D9D24C633640089BFAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DD03D9B24C633640089BFAC /* LaunchScreen.storyboard */; };
 		5DD03DAB24C643990089BFAC /* UIColor+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD03DAA24C643990089BFAC /* UIColor+Custom.swift */; };
-		5DD03DAD24C6496A0089BFAC /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD03DAC24C6496A0089BFAC /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5DA3325724C6D6A2008D4105 /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
+		5DAB83D324DAB95C00E8815D /* WorkoutCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutCell.swift; sourceTree = "<group>"; };
+		5DAB83D524DAC5C700E8815D /* WorkoutCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutCellModel.swift; sourceTree = "<group>"; };
 		5DB9EEA924D9BAF90016A9F1 /* LabelwithPostFix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelwithPostFix.swift; sourceTree = "<group>"; };
 		5DD03D8D24C633630089BFAC /* AFitnessApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AFitnessApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DD03D9024C633630089BFAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -27,7 +30,6 @@
 		5DD03D9C24C633640089BFAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5DD03D9E24C633640089BFAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5DD03DAA24C643990089BFAC /* UIColor+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Custom.swift"; sourceTree = "<group>"; };
-		5DD03DAC24C6496A0089BFAC /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +95,7 @@
 		5DD03DA624C636090089BFAC /* View */ = {
 			isa = PBXGroup;
 			children = (
-				5DD03DAC24C6496A0089BFAC /* CardView.swift */,
+				5DAB83D324DAB95C00E8815D /* WorkoutCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -101,6 +103,7 @@
 		5DD03DA724C6360E0089BFAC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5DAB83D524DAC5C700E8815D /* WorkoutCellModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -183,11 +186,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DAB83D624DAC5C700E8815D /* WorkoutCellModel.swift in Sources */,
 				5DB9EEAA24D9BAF90016A9F1 /* LabelwithPostFix.swift in Sources */,
+				5DAB83D424DAB95C00E8815D /* WorkoutCell.swift in Sources */,
 				5DA3325824C6D6A2008D4105 /* ContainerView.swift in Sources */,
 				5DD03D9524C633630089BFAC /* WorkoutVC.swift in Sources */,
 				5DD03DAB24C643990089BFAC /* UIColor+Custom.swift in Sources */,
-				5DD03DAD24C6496A0089BFAC /* CardView.swift in Sources */,
 				5DD03D9124C633630089BFAC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
